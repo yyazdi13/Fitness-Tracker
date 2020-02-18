@@ -1,0 +1,25 @@
+{
+  "name": "fitness-tracker",
+  "version": "1.0.0",
+  "description": "* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyazdi13/Fitness-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyazdi13/Fitness-Tracker/issues"
+  },
+  "homepage": "https://github.com/yyazdi13/Fitness-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1"
+  }
+}
