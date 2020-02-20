@@ -3,9 +3,9 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
-const db = require("./models");
+const db = require("./models/workout");
 
 const app = express();
 
@@ -28,23 +28,18 @@ app.get('/api/workouts', (req, res) =>{
 });
 
 app.get('/exercise', (req, res)=> {
-    db.create({ name: "Ernest Hemingway" })
-  .then(dbUser => {
-    console.log(dbUser);
-  })
-  .catch(({ message }) => {
-    console.log(message);
-  });
     res.sendFile(path.join(__dirname,'./public/exercise.html'));
 });
 
-app.post('/api/workouts', (req, res) => {
-    db.insert(req.body, (err, data) => {
-        if(err) throw err;
-        else {
-            res.send(data)
-        }
-    });
+app.post("/api/workouts", ({body}, res) => {
+    console.log(body, "inside post")
+    db.create({})
+      .then(data => {
+        res.json(data);
+      })
+      .catch(err => {
+        res.json(err);
+      });
 });
 
 app.listen(PORT, () => {
