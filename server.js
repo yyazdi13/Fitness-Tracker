@@ -51,7 +51,7 @@ app.post("/api/workouts", (req, res) => {
 });
 
 app.put("/api/workouts/:id", (req, res) => {
-    console.log(req.params.id, "put")
+    console.log(req.body, "put")
     db.update(
         {_id: req.params.id}, { $set: { exercises: req.body } },
         
@@ -65,6 +65,15 @@ app.put("/api/workouts/:id", (req, res) => {
             }
           }
     )
+});
+
+app.get('/api/workouts/range', (req,res) => {
+    db.find({},(err, data) =>{
+        if (err) throw err;
+        else {
+            res.send(data);
+        }
+    });
 })
 
 app.listen(PORT, () => {
