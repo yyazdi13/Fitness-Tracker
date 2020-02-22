@@ -19,6 +19,6 @@ A consumer will reach their fitness goals quicker when they track their workout 
 
 ## Tasks
 * Keeping track of data by setting up PUT, GET, and POST api routes in the server 
-* Setting up relational models with Mongoose 
+* Setting up datas models with Mongoose 
 * Serving HTML pages through the back end
 * Creating, reading, and updating data through MongoDB
