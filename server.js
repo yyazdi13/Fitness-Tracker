@@ -41,7 +41,7 @@ app.get('/', (req, res)=> {
 
 app.post("/api/workouts", (req, res) => {
     console.log(req.body, "inside post")
-    db.create({})
+    db.create({ exercises: req.body })
       .then(data => {
         res.send(data);
       })
