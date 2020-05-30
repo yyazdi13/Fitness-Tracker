@@ -22,3 +22,7 @@ A consumer will reach their fitness goals quicker when they track their workout 
 * Setting up datas models with Mongoose 
 * Serving HTML pages through the back end
 * Creating, reading, and updating data through MongoDB
+
+![image](https://user-images.githubusercontent.com/54565666/75305360-7b9d1c80-580b-11ea-9d94-88bb94c814ac.png)
+![image](https://user-images.githubusercontent.com/54565666/75305463-d20a5b00-580b-11ea-95af-7d6e5ed49a39.png)
+
