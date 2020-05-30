@@ -53,7 +53,7 @@ app.post("/api/workouts", (req, res) => {
 app.put("/api/workouts/:id", (req, res) => {
     console.log(req.body, "put")
     db.update(
-        {_id: req.params.id}, { $set: { exercises: req.body, totalDuration: req.body.totalDuration } },
+        {_id: req.params.id}, { $set: { exercises: req.body, totalDuration: req.body } },
         
         (error, data) => {
             if (error) {
