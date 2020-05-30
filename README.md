@@ -1,14 +1,16 @@
 # Fitness-Tracker
 
+Achieve your fitness goals and keep track of all your workouts through this full-stack app.
+
 ## User Story
 
 As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise.
 
 ## Business Context
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
+A consumer will reach their fitness goals quicker when they track their workout progress. This will allow them to organize their workouts and help encorage a sense of accomplishment and motivation.
 
-## Framework
+## Tools
 * MongoDB
 * Mongoose
 * RESTful API
