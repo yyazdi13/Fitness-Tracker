@@ -6,6 +6,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 const db = require("./models/workout");
+const uri = "mongodb+srv://yasmin:@Helloworld13@cluster0.w1tvs.mongodb.net/workout?retryWrites=true&w=majority";
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(uri || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 app.get('/api/workouts', (req, res) =>{
     db.find({},(err, data) =>{
